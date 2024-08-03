@@ -1,0 +1,217 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #ff69b4; /* Medium pink color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: 'Pacifico', cursive; /* Custom font for heading */
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #ffc0cb; /* Light pink for tagline */
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.header nav ul li {
+    margin: 0 15px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: #ffc0cb; /* Light pink on hover */
+}
+
+.hero {
+    background-image: url('Landingpage/background.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 60px 0; /* Padding for the section */
+    position: relative; /* Positioning for overlay */
+
+    /* Create a dark overlay with slight transparency */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/cover\ 3.jpg'); /* Background image */
+    background-size:cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    opacity: 0.3; /* Adjust the opacity for transparency */
+    z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+.container {
+    position: relative; /* Ensure the content is above the background overlay */
+    z-index: 1; /* Higher z-index to be above the background image */
+}
+
+.benefits {
+    padding: 40px 20px; /* Padding for the section */
+    background-color: #f2edf2; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+.benefits h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #a81e63; /* Medium pink for section title */
+}
+
+.benefits p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.benefits ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align list items*/
+}
+
+.benefits ul li {
+    background: #fdfafd; /* White background for list items */
+    border: 1px solid #fda8e1; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Adjusted padding */
+    margin: 10px 0; /* Margin between list items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 300px; /* Set a maximum width */
+    width: 100%; /* Ensure the box width doesn't exceed max-width */
+    text-align: center; /* Center text inside list items */
+    
+}
+
+.benefits ul li strong {
+    color: #ff69b4; /* Medium pink for highlights */
+}
+
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Medium pink for button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d279a8; /* Darker pink on hover */
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.section:nth-of-type(even) {
+    background-color: #f8f8f8;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f7b0d3; /* Medium pink for section titles */
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.service-box img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-content img {
+    width: 40%;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.footer {
+    background-color: #ff69b4; /* Medium pink for footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
